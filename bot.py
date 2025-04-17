@@ -30,3 +30,13 @@ class Bot(Client):
         print('Bot Stopped Bye')
 
 Bot().run()
+
+
+from pyrogram import idle
+
+def run_bot():
+    app.start()
+    print("Bot Started Powered By @VJ_Botz")
+    idle()
+    print("Bot Stopped Bye")
+    app.stop()
